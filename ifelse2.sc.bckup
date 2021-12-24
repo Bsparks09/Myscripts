@@ -1,0 +1,34 @@
+#!/bin/bash
+<< Flag
+This is a script that determines if the have the Nigerian Flag in a box
+We will be assigning variables to this script to deremine such
+The color of Nigerian flag is Green White Green
+Flag
+
+Green=1
+White=2
+GreennWhite=3
+
+#echo $Green
+#echo $White
+#echo $GreennWhite
+
+echo "Input a number from 1 to 3"
+read number
+if [ $number == 1  ]
+then
+echo "This is Green and might be the Nigerian Flag"
+
+elif [ $number == 2  ]
+then	
+echo "This is White and might be the Nigerian Flag"
+
+elif [ $number == 3  ]
+then	
+echo "This is the Nigerian Flag"
+
+else
+       echo "This is not the box containing the Nigerian Flag"
+fi
+
+echo "Operation Successful."
